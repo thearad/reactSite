@@ -4,6 +4,12 @@
 	color: #373a47;
 }
 
+.whitespace{
+	width:60%;
+	height: 100%;
+	background-color: white;
+}
+
 a{
 	color: red;
 }

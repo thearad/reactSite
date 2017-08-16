@@ -13,6 +13,7 @@
 
 .App-body {
   padding: 0px 110px;
+  position: relative;
 }
 
 .App-intro {
@@ -22,6 +23,17 @@
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
+}
+
+.urls{
+  position:fixed;
+  bottom: 25px;
+  right:120px;
+}
+
+.urls a{
+  font-size: 150%;
+  padding:5px;
 }
 
 /* Position and sizing of burger button */
@@ -46,6 +58,11 @@
 /* Color/shape of burger icon bars */
 .bm-burger-bars {
   background: #373a47;
+}
+
+.bm-burger-bars:hover {
+  background: #000!important;
+  opacity:1!important;
 }
 
 /* Position and sizing of clickable cross button */

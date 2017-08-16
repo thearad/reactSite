@@ -5,7 +5,7 @@ import './Resume.css';
 class Resume extends Component {
   render() {
     return (
-      <div className="Resume">
+      <div className="Resume whitespace">
       <Row className="mobile">  
       <div>Download:</div>
       <Button bsSize="large" href="/Resume.docx">{<FaAngleDown/>} DOCX</Button>
