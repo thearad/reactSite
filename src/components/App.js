@@ -12,7 +12,6 @@ class App extends Component {
       var buttonGroupInstance = (
     <Menu right pageWrapId={"page-wrap"} outerContainerId={"outer-container"}>
       <a href="/" className="menu-item">Home</a>
-      <a className="menu-item" href="/about">About</a>
       <a className="menu-item" href="/resume">Resume</a>
       <a className="menu-item" href="/projects">Projects</a>
     </Menu>

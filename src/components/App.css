@@ -19,28 +19,6 @@
   font-size: large;
 }
 
-#dropdown-btn-menu{
-  background-image: none !important;
-  border-radius: 0px !important;
-  font-size: 24px !important;
-}
-
-.dropdown-menu>li>a:hover {
-  background-image: none !important;
-}
-
-.dropdown-menu{
-  border-radius: 0px !important;
-  font-size:20px !important;
-}
-
-.menu{
-  display: block;
-}
-
-.menu div{
-  
-}
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
@@ -53,6 +31,16 @@
   height: 30px;
   right:36px;
   top: 36px;
+}
+
+.menu-item{
+  font:40px;
+  color: white;
+}
+
+.menu-item:hover{
+  color: red;
+  text-decoration: none;
 }
 
 /* Color/shape of burger icon bars */
@@ -73,14 +61,14 @@
 
 /* General sidebar styles */
 .bm-menu {
-  background: #373a47;
+  background: #272838;
   padding: 2.5em 1.5em 0;
   font-size: 1.15em;
 }
 
 /* Morph shape necessary with bubble or elastic */
 .bm-morph-shape {
-  fill: #373a47;
+  fill: #272838;
 }
 
 /* Wrapper for item list */

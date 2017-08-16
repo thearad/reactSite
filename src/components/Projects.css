@@ -1,0 +1,28 @@
+.Projects{
+	color: #373a47;
+}
+
+a.thumbnail:focus{
+	text-decoration: none;
+	outline: none;
+	border:1px solid #ddd;
+}
+
+a.thumbnail:hover{
+	text-decoration: none;
+	border-color: #373a47!important;
+}
+
+.larger {
+	width:80%;
+}
+
+.pad{
+	padding-bottom: 15px;
+}
+
+.category{
+	text-align: left;
+	font: bold 30px sans-serif;
+	line-height:160%;
+}

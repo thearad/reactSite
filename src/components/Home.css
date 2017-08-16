@@ -1,0 +1,67 @@
+@media all and (max-width: 515px) {
+.title{
+	padding-top: 200px;
+	font: bold 85px sans-serif;
+	line-height:75%;
+}
+
+.subtitle{
+	font: 10px sans-serif;
+	color: red;
+}
+
+.popover{
+	display: none!important;
+}
+}
+
+@media all and (min-width: 515px) {
+.title{
+	padding-top: 200px;
+	font: bold 120px sans-serif;
+	line-height:75%;
+}
+
+.subtitle{
+	font: bold 12px sans-serif;
+	color: red;
+}
+
+.popover{
+	max-width:300px;
+}
+}
+
+@media all and (min-width: 670px) {
+.title{
+	padding-top: 200px;
+	font: bold 150px sans-serif;
+	line-height:75%;
+}
+
+.subtitle{
+	font: bold 14px sans-serif;
+	color: red;
+}
+
+.popover{
+	max-width:300px;
+}
+}
+
+@media all and (min-width: 924px) {
+.title{
+	padding-top: 200px;
+	font: bold 150px sans-serif;
+	line-height:70%;
+}
+
+.subtitle{
+	font: bold 14px sans-serif;
+	color: red;
+}
+
+.popover{
+	max-width:350px;
+}
+}
