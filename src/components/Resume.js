@@ -8,14 +8,14 @@ class Resume extends Component {
       <div className="Resume whitespace">
       <Row className="mobile">  
       <div>Download:</div>
-      <Button bsSize="large" href="/Resume.docx">{<FaAngleDown/>} DOCX</Button>
-      <Button bsSize="large" download="/Resume.pdf" href="/Resume.pdf">{<FaAngleDown/>} PDF  </Button>
+      <Button bsSize="large" href="/AR-Resume.docx">{<FaAngleDown/>} DOCX</Button>
+      <Button bsSize="large" download="/ARResume.pdf" href="/AR-Resume.pdf">{<FaAngleDown/>} PDF  </Button>
       </Row>
       <Row className="immobile">
-        <Col xs={6} md={6}>
-      	<a href="/Resume.pdf" download="/Resume.pdf">PDF</a> | <a href="/Resume.docx">DOCX</a>
+        <Col xs={6} md={4}>
+      	<a href="/AR-Resume.pdf" download="/AR-Resume.pdf">PDF</a> | <a href="/AR-Resume.docx">DOCX</a>
         </Col>
-    <Col xs={6} md={6}>
+    <Col xs={6} md={8}>
     </Col>
         </Row>
         <Row className="center">
@@ -25,7 +25,7 @@ class Resume extends Component {
     <Col xs={6} md={6}>
     </Col>
     <Col xs={6} md={6}>
-      	<a download="/Resume.pdf" href="/Resume.pdf">PDF</a> | <a href="/Resume.docx">DOCX</a>
+      	<a download="/AR-Resume.pdf" href="/AR-Resume.pdf">PDF</a> | <a href="/AR-Resume.docx">DOCX</a>
     </Col>
         </Row>
       </div>
