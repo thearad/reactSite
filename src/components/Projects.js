@@ -203,19 +203,19 @@ class Projects extends Component {
         </Row>
         <Row>
         <Col xs={12} md={4}>
-        <Thumbnail href="#" src={this.state.cubeUrl} onMouseLeave={()=>this.setState({ cubeUrl: "/images/still_cube.jpg" })} onMouseEnter={()=>this.setState({ cubeUrl: "/images/cube44cut.gif" })} onClick={()=>this.setState({ cubeShow: true })}>
+        <Thumbnail href="#" alt="242x200" src={this.state.cubeUrl} onMouseLeave={()=>this.setState({ cubeUrl: "/images/still_cube.jpg" })} onMouseEnter={()=>this.setState({ cubeUrl: "/images/cube44cut.gif" })} onClick={()=>this.setState({ cubeShow: true })}>
         <h4> Rigid Body Physics</h4>
         A program that simulates a single rigid body falling and colliding with a ground plane the linear and angular momentum is calculated from the rigid body measurements.
       	</Thumbnail>
       	</Col>
         <Col xs={12} md={4}>
-        <Thumbnail href="#" src="/images/brdfs.png" onClick={()=>this.setState({ brdfShow: true })}>
+        <Thumbnail href="#" alt="242x200" src="/images/brdfs.png" onClick={()=>this.setState({ brdfShow: true })}>
         <h4>Ashikhmin BRDFs</h4>
         A program that generates an image using the Ashikhmin-Shirley Bidirectional Reflectance Distribution Function (BRDF) model.
         </Thumbnail>
         </Col>
         <Col xs={12} md={4}>
-        <Thumbnail href="#" src={this.state.clothUrl} onMouseLeave={()=>this.setState({ clothUrl: "/images/still_cloth.jpg" })} onMouseEnter={()=>this.setState({ clothUrl: "/images/cloth.gif" })} onClick={()=>this.setState({ clothShow: true })}>
+        <Thumbnail href="#" alt="242x200" src={this.state.clothUrl} onMouseLeave={()=>this.setState({ clothUrl: "/images/still_cloth.jpg" })} onMouseEnter={()=>this.setState({ clothUrl: "/images/cloth.gif" })} onClick={()=>this.setState({ clothShow: true })}>
         <h4>Cloth Animation</h4>
         A program that simulates a piece of cloth made from particles, spring-dampers, and triangular surfaces
 		</Thumbnail>
@@ -226,20 +226,20 @@ class Projects extends Component {
         </Row>
         <Row>
         <Col xs={12} md={4}>
-         <Thumbnail src="/images/scicrunch.png" target="_blank" href="https://scicrunch.org/">
+         <Thumbnail alt="242x200" src="/images/scicrunch.png" target="_blank" href="https://scicrunch.org/">
         <h4>Scicrunch {<FaExternalLink/>}</h4>
         Collaborated with main developer, completed features such as file uploading and search result formatting.
         </Thumbnail>
         </Col>
         <Col xs={12} md={4}>
-        <Thumbnail href="#" src={this.state.shopUrl} onMouseLeave={()=>this.setState({ shopUrl: "images/still_shop.jpg"})} onMouseEnter={()=>this.setState({ shopUrl:"/images/addingaCategoryOWNER.gif"})} onClick={()=>this.setState({shopShow: true})}>
+        <Thumbnail alt="242x200" href="#" src={this.state.shopUrl} onMouseLeave={()=>this.setState({ shopUrl: "images/still_shop.jpg"})} onMouseEnter={()=>this.setState({ shopUrl:"/images/addingaCategoryOWNER.gif"})} onClick={()=>this.setState({shopShow: true})}>
         <h4>Shopping Application</h4>
         Completed various pages to view and buy products and categories for owner and customer roles. Completed collaborative tasks including determining database architecture, and writing queries for sql intensive sales analytics.
         Full application completed as a collaborative effort with two other developers.
         </Thumbnail>
         </Col>
         <Col xs={12} md={4}>
-         <Thumbnail src="/images/mrs.png" target="_blank" href="https://ehs.ucsd.edu/myresearchsafety/do/mrsHome">
+         <Thumbnail alt="242x200" src="/images/mrs.png" target="_blank" href="https://ehs.ucsd.edu/myresearchsafety/do/mrsHome">
         <h4>UCSD - EHS {<FaExternalLink/>}</h4>
         Worked on various web applications for researchers at UCSD including CSUA, LHAT, and CHUA.
         </Thumbnail>
