@@ -1,10 +1,12 @@
-import React, { Component } from 'react';
+import React from 'react';
 import {Image, Col, Row, Thumbnail, Modal, Button} from 'react-bootstrap';
 import FaExternalLink from 'react-icons/lib/fa/external-link';
 import FaAngleRight from 'react-icons/lib/fa/angle-right';
 import './Projects.css';
 
-const CubeModal = React.createClass({
+//var createReactClass = require('create-react-class');
+
+class CubeModal extends React.Component {
   render() {
     return (
       <Modal {...this.props} bsSize="large" aria-labelledby="contained-modal-title-lg" dialogClassName="larger">
@@ -49,9 +51,9 @@ const CubeModal = React.createClass({
       </Modal>
     );
   }
-});
+}
 
-const ClothModal = React.createClass({
+class ClothModal extends React.Component{
   render() {
     return (
       <Modal {...this.props} aria-labelledby="contained-modal-title-md">
@@ -74,22 +76,25 @@ const ClothModal = React.createClass({
       </Modal>
     );
   }
-});
-const ShopModal = React.createClass({
-    getInitialState () {
-    return {
+}
+
+class ShopModal extends React.Component{
+  constructor(props, context) {
+  	super(props, context);
+
+    this.state =  {
       enterUrl: "../images/entering_still.jpg",
       historyUrl: "../images/history_still.jpg",
       purchaseUrl: "../images/purchase_still.jpg",
       cartUrl: "../images/producttoCart.jpg",
       addUrl: "../images/add_still.jpg"
     };
-  },
+  };
   render() {
     return (
-      <Modal {...this.props} bsSize="large" aria-labelledby="contained-modal-title-lg" dialogClassName="larger">
+      <Modal {...this.props} bsSize="large" aria-labelledby="contained-modal-title-sp" dialogClassName="larger">
         <Modal.Header closeButton>
-          <Modal.Title id="contained-modal-title-lg">Shopping Application</Modal.Title>
+          <Modal.Title id="contained-modal-title-sp">Shopping Application</Modal.Title>
         </Modal.Header>
         <Modal.Body>
        <Row className="pad">
@@ -143,14 +148,14 @@ const ShopModal = React.createClass({
       </Modal>
     );
   }
-});
+}
 
-const BrdfModal = React.createClass({
+class BrdfModal extends React.Component {
   render() {
     return (
-      <Modal {...this.props} bsSize="large" aria-labelledby="contained-modal-title-lg">
+      <Modal {...this.props} bsSize="large" aria-labelledby="contained-modal-title-br">
         <Modal.Header closeButton>
-          <Modal.Title id="contained-modal-title-lg">Bidirectional Reflectance Distribution Functions (BRDFs)</Modal.Title>
+          <Modal.Title id="contained-modal-title-br">Bidirectional Reflectance Distribution Functions (BRDFs)</Modal.Title>
         </Modal.Header>
         <Modal.Body>
         <Row>
@@ -176,13 +181,9 @@ const BrdfModal = React.createClass({
       </Modal>
     );
   }
-});
-
-function gravityGif() {
-    alert('You clicked the third ListGroupItem');
 }
 
-class Projects extends Component {
+class Projects extends React.Component {
     constructor(props) {
     super(props);
     this.state = {brdfShow: false, cubeShow: false, clothShow: false, shopShow: false, cubeUrl: "/images/still_cube.jpg", clothUrl: "/images/still_cloth.jpg", shopUrl: "/images/still_shop.jpg"};
@@ -203,19 +204,19 @@ class Projects extends Component {
         </Row>
         <Row>
         <Col xs={12} md={4}>
-        <Thumbnail href="#" alt="242x200" src={this.state.cubeUrl} onMouseLeave={()=>this.setState({ cubeUrl: "/images/still_cube.jpg" })} onMouseEnter={()=>this.setState({ cubeUrl: "/images/cube44cut.gif" })} onClick={()=>this.setState({ cubeShow: true })}>
+        <Thumbnail href="#" src={this.state.cubeUrl} onMouseLeave={()=>this.setState({ cubeUrl: "/images/still_cube.jpg" })} onMouseEnter={()=>this.setState({ cubeUrl: "/images/cube44cut.gif" })} onClick={()=>this.setState({ cubeShow: true })}>
         <h4> Rigid Body Physics</h4>
         A program that simulates a single rigid body falling and colliding with a ground plane the linear and angular momentum is calculated from the rigid body measurements.
       	</Thumbnail>
       	</Col>
         <Col xs={12} md={4}>
-        <Thumbnail href="#" alt="242x200" src="/images/brdfs.png" onClick={()=>this.setState({ brdfShow: true })}>
+        <Thumbnail href="#" src="/images/brdfs.png" onClick={()=>this.setState({ brdfShow: true })}>
         <h4>Ashikhmin BRDFs</h4>
         A program that generates an image using the Ashikhmin-Shirley Bidirectional Reflectance Distribution Function (BRDF) model.
         </Thumbnail>
         </Col>
         <Col xs={12} md={4}>
-        <Thumbnail href="#" alt="242x200" src={this.state.clothUrl} onMouseLeave={()=>this.setState({ clothUrl: "/images/still_cloth.jpg" })} onMouseEnter={()=>this.setState({ clothUrl: "/images/cloth.gif" })} onClick={()=>this.setState({ clothShow: true })}>
+        <Thumbnail href="#" src={this.state.clothUrl} onMouseLeave={()=>this.setState({ clothUrl: "/images/still_cloth.jpg" })} onMouseEnter={()=>this.setState({ clothUrl: "/images/cloth.gif" })} onClick={()=>this.setState({ clothShow: true })}>
         <h4>Cloth Animation</h4>
         A program that simulates a piece of cloth made from particles, spring-dampers, and triangular surfaces
 		</Thumbnail>
@@ -226,20 +227,20 @@ class Projects extends Component {
         </Row>
         <Row>
         <Col xs={12} md={4}>
-         <Thumbnail alt="242x200" src="/images/scicrunch.png" target="_blank" href="https://scicrunch.org/">
+         <Thumbnail src="/images/scicrunch.png" target="_blank" href="https://scicrunch.org/">
         <h4>Scicrunch {<FaExternalLink/>}</h4>
         Collaborated with main developer, completed features such as file uploading and search result formatting.
         </Thumbnail>
         </Col>
         <Col xs={12} md={4}>
-        <Thumbnail alt="242x200" href="#" src={this.state.shopUrl} onMouseLeave={()=>this.setState({ shopUrl: "images/still_shop.jpg"})} onMouseEnter={()=>this.setState({ shopUrl:"/images/addingaCategoryOWNER.gif"})} onClick={()=>this.setState({shopShow: true})}>
+        <Thumbnail href="#" src={this.state.shopUrl} onMouseLeave={()=>this.setState({ shopUrl: "images/still_shop.jpg"})} onMouseEnter={()=>this.setState({ shopUrl:"/images/addingaCategoryOWNER.gif"})} onClick={()=>this.setState({shopShow: true})}>
         <h4>Shopping Application</h4>
         Completed various pages to view and buy products and categories for owner and customer roles. Completed collaborative tasks including determining database architecture, and writing queries for sql intensive sales analytics.
         Full application completed as a collaborative effort with two other developers.
         </Thumbnail>
         </Col>
         <Col xs={12} md={4}>
-         <Thumbnail alt="242x200" src="/images/mrs.png" target="_blank" href="https://ehs.ucsd.edu/myresearchsafety/do/mrsHome">
+         <Thumbnail src="/images/mrs.png" target="_blank" href="https://ehs.ucsd.edu/myresearchsafety/do/mrsHome">
         <h4>UCSD - EHS {<FaExternalLink/>}</h4>
         Worked on various web applications for researchers at UCSD including CSUA, LHAT, and CHUA.
         </Thumbnail>

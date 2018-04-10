@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
-import logo from '../logo.svg';
 import './App.css';
-import {MenuItem, ButtonGroup, Button, Row} from 'react-bootstrap';
+import {Row} from 'react-bootstrap';
 import {elastic as Menu} from 'react-burger-menu';
 import FaGithub from 'react-icons/lib/fa/github';
 import FaLinkedin from 'react-icons/lib/fa/linkedin';
@@ -18,8 +17,8 @@ class App extends Component {
       <a className="menu-item" href="/resume">Resume</a>
       <a className="menu-item" href="/projects">Projects</a>
       <Row className="urls">
-      <a target="_blank" href="https://github.com/thearad?tab=repositories">{<FaGithub/>}</a>
-      <a target="_blank" href="https://linkedin.com/in/ana-radic-b74475123">{<FaLinkedin/>}</a>
+      <a target="_blank noopener noreferrer" href="https://github.com/thearad?tab=repositories">{<FaGithub/>}</a>
+      <a target="_blank noopener noreferrer" href="https://linkedin.com/in/ana-radic-b74475123">{<FaLinkedin/>}</a>
       <a href="mailto:aradic@ucsd.edu">{<FaEnvelope/>}</a>
       </Row>
     </Menu>
