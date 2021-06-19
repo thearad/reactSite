@@ -28,11 +28,11 @@ class Home extends Component {
         >
 
           <Popover id="popover-contained" >
-            <h4><strong>Hello!</strong></h4>I'm Ana, a 21 year-old recently graduated Computer Programmer living in San Diego.
+            <h4><strong>Hello!</strong></h4>I'm Ana, a 25 year-old Senior Software Engineer living in San Diego.
           	I love making things, fixing things, and helping people through programming. 
-          	I've worked as a part-time application developer and also have experience in
-          	mobile development, computer animation, and machine learning. My interests include
-          	cooking, video games, and bettering myself.
+          	I've worked as a web application developer, have experience in mobile development, computer animation, and machine learning.
+            Currently, I'm in a great team at DivX as a backend developer working mainly with NodeJS and AWS resources.
+            My interests include cooking, video games, and bettering myself.
           </Popover>
         </Overlay>
         </Row>
@@ -40,7 +40,7 @@ class Home extends Component {
 		<Col xs={6} md={4}>
 		</Col>
 		<Col xs={6} md={8}>
-        Computer Programmer
+        Senior Software Engineer
         </Col>
         </Row>
       </div>

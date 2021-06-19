@@ -8,12 +8,12 @@ class Resume extends Component {
       <div className="Resume whitespace">
       <Row className="mobile">  
       <div>Download:</div>
-      <Button bsSize="large" href="/AR-Resume.docx">{<FaAngleDown/>} DOCX</Button>
-      <Button bsSize="large" download="/ARResume.pdf" href="/AR-Resume.pdf">{<FaAngleDown/>} PDF  </Button>
+      <Button bsSize="large" href="/RADICResume.docx">{<FaAngleDown/>} DOCX</Button>
+      <Button bsSize="large" download="RADICResume.pdf" href="/RADICResume.pdf">{<FaAngleDown/>} PDF  </Button>
       </Row>
       <Row className="immobile">
         <Col xs={6} md={4}>
-      	<a href="/AR-Resume.pdf" download="/AR-Resume.pdf">PDF</a> | <a href="/AR-Resume.docx">DOCX</a>
+      	<a href="/RADICResume.pdf" download="RADICResume.pdf">PDF</a> | <a href="/RADICResume.docx">DOCX</a>
         </Col>
     <Col xs={6} md={8}>
     </Col>
@@ -25,7 +25,7 @@ class Resume extends Component {
     <Col xs={6} md={6}>
     </Col>
     <Col xs={6} md={6}>
-      	<a download="/AR-Resume.pdf" href="/AR-Resume.pdf">PDF</a> | <a href="/AR-Resume.docx">DOCX</a>
+      	<a download="RADICResume.pdf" href="/RADICResume.pdf">PDF</a> | <a href="/RADICResume.docx">DOCX</a>
     </Col>
         </Row>
       </div>

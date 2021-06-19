@@ -24,10 +24,10 @@ class CubeModal extends React.Component {
         </Row>
       <Row className="pad">
       <Col xs={6} md={6}>
-      <p>A cube with depth, height, and width all set to 1 and the mass set to 0.5. Using the parameters from the UI, a rotational inertia matrix is calculated.</p>
+      <p>A cube with depth, height, and width all set to 1, with a mass of 0.5. Using the parameters from the UI, a rotational inertia matrix is calculated.</p>
       </Col>
       <Col xs={6} md={6}>
-      <p>A cube with all components set to 1, notice that this cube's acceleration is greater than the previous examples, due to the mass being twice as big.</p>
+      <p>Now by modifying the mass to 1, this cube's acceleration is greater than the previous example's, due to the mass increasing by 0.5.</p>
       </Col>
       </Row>
         <Row>
@@ -66,7 +66,7 @@ class ClothModal extends React.Component{
         <Image src="/images/cloth.gif" thumbnail />
       </Col>
       <Col xs={6} md={6}>
-      <h5>A 55 by 45 particle cloth whose movement due to wind force and gravity is determined through spring damper equations. For each time-step there are 15 spring iterations in which the program verifies that all springs satisfy the necessary constraints, then the position of each particle at the next itme step is calculated. Three particles on the top left and right corners of the cloth remain fixed, due to a boolean, so a full effect can be visualized.</h5>
+      <h5>A 55 by 45 particle cloth whose movement due to wind force and gravity is determined through spring damper equations. For each time-step there are 15 spring iterations in which the program verifies that all springs satisfy the necessary constraints, then the position of each particle at the next time step is calculated. Three particles on the top left and right corners of the cloth remain fixed, due to a boolean, so a full effect can be visualized.</h5>
       </Col>
         </Row>
         </Modal.Body>
@@ -171,7 +171,7 @@ class BrdfModal extends React.Component {
         <Image src="/images/brdfs.png" thumbnail/>
         </Col>
         <Col xs={12} md={12}>
-        The above image is the same Ashikhmin-Shirley BRDF implementation with 10x10 samples and a depth of 8. The Ashikhmin-Shirley BRDF was implemented through forward-evauluation of the BRDF, recursive ray reflection, and functions to determine where the reflection ray will be sampled from.
+        The above image is the same Ashikhmin-Shirley BRDF implementation with 10x10 samples and a depth of 8. The Ashikhmin-Shirley BRDF was implemented through forward-evaluation of the BRDF, recursive ray reflection, and functions to determine where the reflection ray will be sampled from.
         </Col>
         </Row>
         </Modal.Body>
